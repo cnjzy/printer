@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dY0-1O-wdG">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="FXd-bj-zQf">
+            <objects>
+                <viewController id="dY0-1O-wdG" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KjL-L6-1pi"/>
+                        <viewControllerLayoutGuide type="bottom" id="qIe-xs-hWd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oZ5-q5-9hF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uiP-WA-PnX">
+                                <rect key="frame" x="108" y="256" width="105" height="55"/>
+                                <color key="backgroundColor" red="0.0" green="0.050397792596610813" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Gc9-dD-Phg"/>
+                                    <constraint firstAttribute="width" constant="105" id="ziO-0y-Ert"/>
+                                </constraints>
+                                <state key="normal" title="打印">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="haha:" destination="p9i-vO-iLB" eventType="touchUpInside" id="EpC-AV-ZtI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uiP-WA-PnX" firstAttribute="centerX" secondItem="oZ5-q5-9hF" secondAttribute="centerX" id="3sp-so-ZBP"/>
+                            <constraint firstItem="uiP-WA-PnX" firstAttribute="centerY" secondItem="oZ5-q5-9hF" secondAttribute="centerY" id="Cr7-3m-OAg"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p9i-vO-iLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-29" y="79"/>
+        </scene>
+    </scenes>
+</document>

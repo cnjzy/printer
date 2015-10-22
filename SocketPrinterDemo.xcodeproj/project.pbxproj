@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A5E45B41BD8B1040028C980 /* PrinterUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5E45B31BD8B1040028C980 /* PrinterUtils.m */; settings = {ASSET_TAGS = (); }; };
+		4AF66D2E1BD87D620083D255 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF66D2D1BD87D620083D255 /* main.m */; };
+		4AF66D311BD87D620083D255 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF66D301BD87D620083D255 /* AppDelegate.m */; };
+		4AF66D341BD87D620083D255 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF66D331BD87D620083D255 /* ViewController.m */; };
+		4AF66D371BD87D620083D255 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF66D351BD87D620083D255 /* Main.storyboard */; };
+		4AF66D391BD87D620083D255 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF66D381BD87D620083D255 /* Assets.xcassets */; };
+		4AF66D3C1BD87D620083D255 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF66D3A1BD87D620083D255 /* LaunchScreen.storyboard */; };
+		4AF66D471BD87D620083D255 /* SocketPrinterDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF66D461BD87D620083D255 /* SocketPrinterDemoTests.m */; };
+		4AF66D521BD87D620083D255 /* SocketPrinterDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF66D511BD87D620083D255 /* SocketPrinterDemoUITests.m */; };
+		4AF66D601BD881CC0083D255 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF66D5F1BD881CC0083D255 /* CFNetwork.framework */; };
+		4AF66D661BD886F30083D255 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF66D631BD886F30083D255 /* AsyncSocket.m */; settings = {ASSET_TAGS = (); }; };
+		4AF66D671BD886F30083D255 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF66D651BD886F30083D255 /* AsyncUdpSocket.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AF66D431BD87D620083D255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AF66D211BD87D620083D255 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AF66D281BD87D620083D255;
+			remoteInfo = SocketPrinterDemo;
+		};
+		4AF66D4E1BD87D620083D255 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AF66D211BD87D620083D255 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AF66D281BD87D620083D255;
+			remoteInfo = SocketPrinterDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A5E45B31BD8B1040028C980 /* PrinterUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterUtils.m; sourceTree = "<group>"; };
+		4A5E45B51BD8B11D0028C980 /* PrinterUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrinterUtils.h; sourceTree = "<group>"; };
+		4AF66D291BD87D620083D255 /* SocketPrinterDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketPrinterDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF66D2D1BD87D620083D255 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AF66D2F1BD87D620083D255 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AF66D301BD87D620083D255 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AF66D321BD87D620083D255 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4AF66D331BD87D620083D255 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4AF66D361BD87D620083D255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AF66D381BD87D620083D255 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AF66D3B1BD87D620083D255 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AF66D3D1BD87D620083D255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF66D421BD87D620083D255 /* SocketPrinterDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketPrinterDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF66D461BD87D620083D255 /* SocketPrinterDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketPrinterDemoTests.m; sourceTree = "<group>"; };
+		4AF66D481BD87D620083D255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF66D4D1BD87D620083D255 /* SocketPrinterDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocketPrinterDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF66D511BD87D620083D255 /* SocketPrinterDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketPrinterDemoUITests.m; sourceTree = "<group>"; };
+		4AF66D531BD87D620083D255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF66D5F1BD881CC0083D255 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4AF66D621BD886F30083D255 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		4AF66D631BD886F30083D255 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		4AF66D641BD886F30083D255 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		4AF66D651BD886F30083D255 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AF66D261BD87D620083D255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF66D601BD881CC0083D255 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF66D3F1BD87D620083D255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF66D4A1BD87D620083D255 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AF66D201BD87D620083D255 = {
+			isa = PBXGroup;
+			children = (
+				4AF66D611BD886D40083D255 /* AsynSocket */,
+				4AF66D5F1BD881CC0083D255 /* CFNetwork.framework */,
+				4AF66D2B1BD87D620083D255 /* SocketPrinterDemo */,
+				4AF66D451BD87D620083D255 /* SocketPrinterDemoTests */,
+				4AF66D501BD87D620083D255 /* SocketPrinterDemoUITests */,
+				4AF66D2A1BD87D620083D255 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AF66D2A1BD87D620083D255 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AF66D291BD87D620083D255 /* SocketPrinterDemo.app */,
+				4AF66D421BD87D620083D255 /* SocketPrinterDemoTests.xctest */,
+				4AF66D4D1BD87D620083D255 /* SocketPrinterDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AF66D2B1BD87D620083D255 /* SocketPrinterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4AF66D2F1BD87D620083D255 /* AppDelegate.h */,
+				4AF66D301BD87D620083D255 /* AppDelegate.m */,
+				4AF66D321BD87D620083D255 /* ViewController.h */,
+				4AF66D331BD87D620083D255 /* ViewController.m */,
+				4AF66D351BD87D620083D255 /* Main.storyboard */,
+				4AF66D381BD87D620083D255 /* Assets.xcassets */,
+				4AF66D3A1BD87D620083D255 /* LaunchScreen.storyboard */,
+				4AF66D3D1BD87D620083D255 /* Info.plist */,
+				4AF66D2C1BD87D620083D255 /* Supporting Files */,
+			);
+			path = SocketPrinterDemo;
+			sourceTree = "<group>";
+		};
+		4AF66D2C1BD87D620083D255 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AF66D2D1BD87D620083D255 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AF66D451BD87D620083D255 /* SocketPrinterDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AF66D461BD87D620083D255 /* SocketPrinterDemoTests.m */,
+				4AF66D481BD87D620083D255 /* Info.plist */,
+			);
+			path = SocketPrinterDemoTests;
+			sourceTree = "<group>";
+		};
+		4AF66D501BD87D620083D255 /* SocketPrinterDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AF66D511BD87D620083D255 /* SocketPrinterDemoUITests.m */,
+				4AF66D531BD87D620083D255 /* Info.plist */,
+			);
+			path = SocketPrinterDemoUITests;
+			sourceTree = "<group>";
+		};
+		4AF66D611BD886D40083D255 /* AsynSocket */ = {
+			isa = PBXGroup;
+			children = (
+				4AF66D621BD886F30083D255 /* AsyncSocket.h */,
+				4AF66D631BD886F30083D255 /* AsyncSocket.m */,
+				4AF66D641BD886F30083D255 /* AsyncUdpSocket.h */,
+				4AF66D651BD886F30083D255 /* AsyncUdpSocket.m */,
+				4A5E45B31BD8B1040028C980 /* PrinterUtils.m */,
+				4A5E45B51BD8B11D0028C980 /* PrinterUtils.h */,
+			);
+			name = AsynSocket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AF66D281BD87D620083D255 /* SocketPrinterDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF66D561BD87D620083D255 /* Build configuration list for PBXNativeTarget "SocketPrinterDemo" */;
+			buildPhases = (
+				4AF66D251BD87D620083D255 /* Sources */,
+				4AF66D261BD87D620083D255 /* Frameworks */,
+				4AF66D271BD87D620083D255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketPrinterDemo;
+			productName = SocketPrinterDemo;
+			productReference = 4AF66D291BD87D620083D255 /* SocketPrinterDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AF66D411BD87D620083D255 /* SocketPrinterDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF66D591BD87D620083D255 /* Build configuration list for PBXNativeTarget "SocketPrinterDemoTests" */;
+			buildPhases = (
+				4AF66D3E1BD87D620083D255 /* Sources */,
+				4AF66D3F1BD87D620083D255 /* Frameworks */,
+				4AF66D401BD87D620083D255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AF66D441BD87D620083D255 /* PBXTargetDependency */,
+			);
+			name = SocketPrinterDemoTests;
+			productName = SocketPrinterDemoTests;
+			productReference = 4AF66D421BD87D620083D255 /* SocketPrinterDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AF66D4C1BD87D620083D255 /* SocketPrinterDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF66D5C1BD87D620083D255 /* Build configuration list for PBXNativeTarget "SocketPrinterDemoUITests" */;
+			buildPhases = (
+				4AF66D491BD87D620083D255 /* Sources */,
+				4AF66D4A1BD87D620083D255 /* Frameworks */,
+				4AF66D4B1BD87D620083D255 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AF66D4F1BD87D620083D255 /* PBXTargetDependency */,
+			);
+			name = SocketPrinterDemoUITests;
+			productName = SocketPrinterDemoUITests;
+			productReference = 4AF66D4D1BD87D620083D255 /* SocketPrinterDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AF66D211BD87D620083D255 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Jzy;
+				TargetAttributes = {
+					4AF66D281BD87D620083D255 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					4AF66D411BD87D620083D255 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 4AF66D281BD87D620083D255;
+					};
+					4AF66D4C1BD87D620083D255 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 4AF66D281BD87D620083D255;
+					};
+				};
+			};
+			buildConfigurationList = 4AF66D241BD87D620083D255 /* Build configuration list for PBXProject "SocketPrinterDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AF66D201BD87D620083D255;
+			productRefGroup = 4AF66D2A1BD87D620083D255 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AF66D281BD87D620083D255 /* SocketPrinterDemo */,
+				4AF66D411BD87D620083D255 /* SocketPrinterDemoTests */,
+				4AF66D4C1BD87D620083D255 /* SocketPrinterDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AF66D271BD87D620083D255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF66D3C1BD87D620083D255 /* LaunchScreen.storyboard in Resources */,
+				4AF66D391BD87D620083D255 /* Assets.xcassets in Resources */,
+				4AF66D371BD87D620083D255 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF66D401BD87D620083D255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF66D4B1BD87D620083D255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AF66D251BD87D620083D255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF66D341BD87D620083D255 /* ViewController.m in Sources */,
+				4AF66D671BD886F30083D255 /* AsyncUdpSocket.m in Sources */,
+				4A5E45B41BD8B1040028C980 /* PrinterUtils.m in Sources */,
+				4AF66D311BD87D620083D255 /* AppDelegate.m in Sources */,
+				4AF66D2E1BD87D620083D255 /* main.m in Sources */,
+				4AF66D661BD886F30083D255 /* AsyncSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF66D3E1BD87D620083D255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF66D471BD87D620083D255 /* SocketPrinterDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF66D491BD87D620083D255 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF66D521BD87D620083D255 /* SocketPrinterDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AF66D441BD87D620083D255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AF66D281BD87D620083D255 /* SocketPrinterDemo */;
+			targetProxy = 4AF66D431BD87D620083D255 /* PBXContainerItemProxy */;
+		};
+		4AF66D4F1BD87D620083D255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AF66D281BD87D620083D255 /* SocketPrinterDemo */;
+			targetProxy = 4AF66D4E1BD87D620083D255 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AF66D351BD87D620083D255 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AF66D361BD87D620083D255 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AF66D3A1BD87D620083D255 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AF66D3B1BD87D620083D255 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AF66D541BD87D620083D255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AF66D551BD87D620083D255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AF66D571BD87D620083D255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SocketPrinterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SocketPrinterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4AF66D581BD87D620083D255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SocketPrinterDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SocketPrinterDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4AF66D5A1BD87D620083D255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SocketPrinterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SocketPrinterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocketPrinterDemo.app/SocketPrinterDemo";
+			};
+			name = Debug;
+		};
+		4AF66D5B1BD87D620083D255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SocketPrinterDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SocketPrinterDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocketPrinterDemo.app/SocketPrinterDemo";
+			};
+			name = Release;
+		};
+		4AF66D5D1BD87D620083D255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SocketPrinterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SocketPrinterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SocketPrinterDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4AF66D5E1BD87D620083D255 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SocketPrinterDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.SocketPrinterDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SocketPrinterDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AF66D241BD87D620083D255 /* Build configuration list for PBXProject "SocketPrinterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF66D541BD87D620083D255 /* Debug */,
+				4AF66D551BD87D620083D255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF66D561BD87D620083D255 /* Build configuration list for PBXNativeTarget "SocketPrinterDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF66D571BD87D620083D255 /* Debug */,
+				4AF66D581BD87D620083D255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF66D591BD87D620083D255 /* Build configuration list for PBXNativeTarget "SocketPrinterDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF66D5A1BD87D620083D255 /* Debug */,
+				4AF66D5B1BD87D620083D255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF66D5C1BD87D620083D255 /* Build configuration list for PBXNativeTarget "SocketPrinterDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF66D5D1BD87D620083D255 /* Debug */,
+				4AF66D5E1BD87D620083D255 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AF66D211BD87D620083D255 /* Project object */;
+}
