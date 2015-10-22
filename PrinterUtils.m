@@ -78,6 +78,14 @@
     [self printByData:cmdData];
 }
 
+/*
+ * 按照图片类型输出
+ */
+- (void) printByImage:(NSString*) imagePath
+{
+    
+}
+
 // 建立连接
 - (void)onSocket:(AsyncSocket *)sock didConnectToHost:(NSString *)host port:(UInt16)port
 {
